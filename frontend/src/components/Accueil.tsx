@@ -1,11 +1,10 @@
 import BullesGauche from '../assets/bullesGauche.svg'
 import Hippocampes from '../assets/hippocampes.png'
-import CorailGauche from '../assets/CorailGauche.png'
-import CorailDroite from '../assets/CorailDroite.png'
 import BigPoisson from '../assets/bigPoisson.png'
 import SmallPoisson from '../assets/smallPoisson.png'
 import SmallBulles from '../assets/smallBulles.png'
 import Plongeur from '../assets/plongeur.png'
+import Image from '../assets/accueilImg.png'
 
 import HippocampesDroite from '../assets/hippocampesDroite.png'
 import CorailCaillou from '../assets/corailDesign.png'
@@ -38,12 +37,11 @@ const Accueil = () => {
                     <h1 style={{ fontSize: '2.5rem' }}>Bienvenue dans l'eau</h1>
                     <p>Lalala on est dans l'eau</p>
                 </div>
+                <img src={Image} style={{ position: 'absolute', left: '0', width: '100%' }} alt="" />
                 <img src={BullesGauche} id='bullesGauche' style={{ position: 'absolute', left: '60px', top: '350px' }} alt="" />
                 < AnimationPoissonGauche />
                 <img src={Hippocampes} id='hippocampesDroite' style={{ position: 'absolute', left: '37rem', top: '34rem', height: '60px' }} alt="" />
                 <img src={Hippocampes} className='hippocampesDroite' style={{ position: 'absolute', left: '37rem', top: '34rem', height: '60px' }} alt="" />
-                <img src={CorailGauche} id='corailGauche' style={{ position: 'absolute', left: '0', top: '27rem', height: '380px' }} alt="" />
-                <img src={CorailDroite} id='corailDroite' style={{ position: 'absolute', right: '0', top: '29rem' }} alt="" />
                 <img src={BigPoisson} id='bigPoisson' style={{ position: 'absolute', top: '62rem', left: '14rem', height: '150px' }} alt="" />
                 <img src={SmallPoisson} id='smallPoisson' className="poissonDroite" style={{ position: 'absolute', right: '380px' }} alt="" />
                 < AnimationPoissonDroite/>
@@ -93,33 +91,33 @@ const Accueil = () => {
 
 
                 {/* BULLES */}
-                <div className='boiteDiscussion' style={{ bottom: '-36rem', right: '20rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' style={{ bottom: '-36rem', right: '20rem', padding: '1rem', width: '53rem' }}>
+                    <p className='textDiscussion'>Nous voici tout d’abord à la surface de l’eau. 
+Tout comme notre peau qui protège nos organes en régulant notre température corporelle, la surface protège les écosystèmes marins sous-jacents et régule les échanges thermiques entre l'atmosphère et l'eau.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite2' style={{ bottom: '-86rem', right: '14rem', zIndex: '10' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite2' style={{ bottom: '-86rem', right: '14rem', zIndex: '10', width: '41rem', padding: '1rem' }}>
+                    <p className='textDiscussion'>Pour respirer sous l’eau, nous avons besoin d’un masque à oxygène. L’océan a également ses propres poumons.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite3' style={{ bottom: '-102rem', right: '13rem', zIndex: '10', padding: '1rem 12rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite3' style={{ bottom: '-102rem', right: '13rem', zIndex: '10', padding: '1rem 1rem', width: '40rem' }}>
+                    <p className='textDiscussion'>Le phytoplancton que l’on voit ici effectue la photosynthèse, absorbant le CO2 et produisant une grande partie de l’oxygène de la Terre.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite4' style={{ bottom: '-147rem', right: '21rem', zIndex: '10', padding: '1rem 8rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite4' style={{ bottom: '-147rem', right: '21rem', zIndex: '10', padding: '1rem 1rem', width: '40rem' }}>
+                    <p className='textDiscussion'>D’ailleurs, l’océan possède également son propre système immunitaire. Si l’être humain est doté de multiples globules pour se défendre, l’océan peut compter sur ses bactéries marines qui produisent des antibiotiques naturels qui aident à contrôler les populations de pathogènes.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite5' style={{ bottom: '-257rem', right: '43rem', zIndex: '10', padding: '1rem 8rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite5' style={{ bottom: '-257rem', right: '43rem', zIndex: '10', padding: '1rem 1rem', width: '40rem' }}>
+                    <p className='textDiscussion'>De la même manière que notre coeur pompe le sang pour distribuer l’oxygène et les nutriments essentiels, les courants marins pompent la chaleur en la distribuant sur le globe.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite6' style={{ bottom: '-324rem', right: '47rem', zIndex: '10', padding: '1rem 8rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite6' style={{ bottom: '-324rem', right: '47rem', zIndex: '10', padding: '1rem 1rem', width: '30rem' }}>
+                    <p className='textDiscussion'>La biodiversité est indispensable à la bonne santé des océans.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite7' style={{ bottom: '-358rem', right: '28rem', zIndex: '10', padding: '2rem 8rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite7' style={{ bottom: '-358rem', right: '28rem', zIndex: '10', padding: '1rem 1rem', width: '30rem' }}>
+                    <p className='textDiscussion'>C’est pourquoi sa reproduction garantit leur préservation. La reproduction humaine n’a pas un but si différent de la biodiversité.</p>
                 </div>
-                <div className='boiteDiscussion' id='boite8' style={{ bottom: '-488rem', right: '19rem', zIndex: '10', padding: '1rem 8rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
+                <div className='boiteDiscussion' id='boite9' style={{ bottom: '-594rem', right: '30rem', zIndex: '10', padding: '1rem 1rem', width: '35rem' }}>
+                    <p className='textDiscussion'>Finalement, l’Homme et l’Océan ne sont pas si différents, pas vrai ? On se retrouve pour le quiz !</p>
                 </div>
-                <div className='boiteDiscussion' id='boite9' style={{ bottom: '-594rem', right: '30rem', zIndex: '10', padding: '1rem 17rem' }}>
-                    <p className='textDiscussion'>Discussion</p>
-                </div>
+                <a style={{ position: 'absolute', bottom: '-546rem', right: '43rem' }} href="https://youtu.be/v72SYC6yjKk">Video Explicative</a>
+                <a style={{ position: 'absolute', bottom: '-744rem', right: '43rem' }} href="https://youtu.be/vlRfYFFkxx4">Video Explicative</a>
             </div>
             {/* < Quizz/> */}
         </section>

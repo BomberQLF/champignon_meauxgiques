@@ -23,7 +23,6 @@ export const AnimationPoissonGauche = () => {
                 start:"top center",
                 end: "bottom 150px",
                 trigger: '.poissonGauche',
-                markers:true,
                 scrub:2
             }
         });
@@ -46,7 +45,6 @@ export const AnimationPoissonDroite = () => {
                 start:"top center",
                 end: "bottom 150px",
                 trigger: '.poissonDroite',
-                markers:true,
                 scrub:2
             }
         });
